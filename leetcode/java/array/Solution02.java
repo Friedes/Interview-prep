@@ -1,4 +1,4 @@
-package javacode.array;
+package leetcode.java.array;
 
 /*
  * Problem 02 : add two numbers

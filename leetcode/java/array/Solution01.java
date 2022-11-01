@@ -1,6 +1,6 @@
-package javacode.array;
+package leetcode.java.array;
 
-import javacode.Solution;
+import leetcode.java.Solution;
 
 /*
  * Problem 01 : two sum

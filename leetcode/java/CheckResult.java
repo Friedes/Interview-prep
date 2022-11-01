@@ -1,6 +1,6 @@
-package javacode;
+package leetcode.java;
 
-import javacode.array.Solution01;
+import leetcode.java.array.Solution01;
 
 public class CheckResult {
     public static void main(String[] args){
