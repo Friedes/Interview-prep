@@ -2,10 +2,12 @@ package geeksforgeeks.java.search;
 
 import java.util.Arrays;
 
+import geeksforgeeks.java.Solution;
+
 /*
  * Median in a row-wise sorted Matrix : 01 Nov 2022
  */
-public class Solution01 {
+public class Solution01 implements Solution {
     int median(int matrix[][], int R, int C) {
         // code here      
         int[] sol = new int[C*R];
@@ -18,5 +20,9 @@ public class Solution01 {
         }
         Arrays.sort(sol);
         return sol[(R*C)/2];
+    }
+
+    public String testResult(){
+        return "";
     }
 }
