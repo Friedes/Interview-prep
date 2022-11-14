@@ -3,7 +3,7 @@ package geeksforgeeks.java.misc;
 import java.util.HashMap;
 
 /*
- * Maximum Sub-String after at most K changes : Dailt > 12 Nove 2022
+ * Maximum Sub-String after at most K changes : Daily > 12 Nove 2022
  */
 public class Solution12 {
     public int characterReplacement(String s, int k) {
