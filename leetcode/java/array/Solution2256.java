@@ -1,0 +1,28 @@
+package leetcode.java.array;
+
+/*
+ * Minimum Average Difference : Daily > 4 Dec 2022
+ */
+public class Solution2256 {
+    public int minimumAverageDifference(int[] nums) {
+        int n = nums.length;
+        long sum = 0;
+        for (int i = 0; i < n; i++)
+            sum += nums[i];
+
+        long avg = Long.MAX_VALUE;
+        int ans = 0;
+        long pre = 0;
+        for (int i = 0; i < n; i++) {
+            pre += nums[i];
+            long avg1 = pre / (i + 1);
+            long avg2 = (i != n - 1) ? (sum - pre) / (n - i - 1) : 0;
+            if (Math.abs(avg1 - avg2) < avg) {
+                avg = Math.abs(avg1 - avg2);
+                ans = i;
+            }
+        }
+        return ans;
+    }
+
+}
